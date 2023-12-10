@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <title>PDF Composer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="16x16"  href="./favicon-16x16.png">
+</head>
+<body id="body">
+    <div id="conteiner">
+        <div class="input-area">
+            <label for="textarea">HTML: </label>
+            <textarea cols="30" rows="10" id="textarea"></textarea>
+            <button onclick="gerarPdf()">Gerar PDF</button>
+        </div>
+        <div id="iframe">
+            <div id="preview">
+                <h2>PREVIEW:</h2>
+                <span>(as dimensões da preview não correspondem ao tamanho real do PDF)</span>
+            </div>
+            <iframe frameborder="0" width="300px" height="400px"></iframe>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
